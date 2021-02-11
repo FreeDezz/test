@@ -16,28 +16,28 @@ body {
 .one {
   background: url("../images/1.jpg") no-repeat center;
   background-size: auto;
-  clip-path: polygon(0 0, 50% 0, 50% 50%, 0 50%);
+  clip-path: polygon(0 0%, 100% 0%, 50% 50%, 50% 50%);
   transition: all ease-in-out 0.7s;
 }
 
 .two {
   background: url("../images/2.jpg") no-repeat center;
   background-size: cover;
-  clip-path: polygon(50% 0, 100% 0, 100% 50%, 50% 50%);
+  clip-path: polygon(50% 50%, 100% 0%, 100% 100%, 50% 50%);
   transition: all ease-in-out 0.7s;
 }
 
 .three {
   background: url("../images/3.jpg") no-repeat center;
   background-size: cover;
-  clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 50% 100%);
+  clip-path: polygon(50% 50%, 50% 50%, 100% 100%, 0 100%);
   transition: all ease-in-out 0.7s;
 }
 
 .four {
   background: url("../images/4.jpg") no-repeat center;
   background-size: cover;
-  clip-path: polygon(0 50%, 50% 50%, 50% 100%, 0 100%);
+  clip-path: polygon(0 0, 50% 50%, 50% 50%, 0 100%);
   transition: all ease-in-out 0.7s;
 }
 

@@ -2,8 +2,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var img = document.querySelectorAll('.img'),
         namber = 0;
-    img[namber].classList.add('active');
-    img[namber].classList.add('index');
+
+
+    function sayHii() {
+
+        img[namber].classList.add('active');
+        img[namber].classList.add('index');
+
+    }
+
+    setTimeout(sayHii, 1500);
+
+
     setInterval(function () {
 
         if (namber <= 2) {
@@ -29,10 +39,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
                 img[namber].classList.add('active');
                 img[namber].classList.add('index');
-                console.log(namber)
             }
 
-            setTimeout(sayHi, 850);
+            setTimeout(sayHi, 1500);
 
         });
     }, 5000)
