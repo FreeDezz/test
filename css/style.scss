@@ -1,0 +1,50 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.one {
+  background: url('../images/1.jpg') no-repeat center;
+  background-size: auto;
+  clip-path: polygon(0 0, 50% 0, 50% 50%, 0 50%);
+  transition: all ease-in-out .7s;
+}
+
+.two {
+  background: url('../images/2.jpg') no-repeat center;
+  background-size: cover;
+  clip-path: polygon(50% 0, 100% 0, 100% 50%, 50% 50%);
+  transition: all ease-in-out .7s;
+}
+
+.three {
+  background: url('../images/3.jpg') no-repeat center;
+  background-size: cover;
+  clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 50% 100%);
+  transition: all ease-in-out .7s;
+}
+
+.four {
+  background: url('../images/4.jpg') no-repeat center;
+  background-size: cover;
+  clip-path: polygon(0 50%, 50% 50%, 50% 100%, 0 100%);
+  transition: all ease-in-out .7s;
+}
+
+.active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  transition: all ease-in-out .7s;
+}
+.index {
+  z-index: 1;
+}
